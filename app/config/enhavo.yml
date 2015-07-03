@@ -1,0 +1,117 @@
+cmf_routing:
+    dynamic:
+        controllers_by_class:
+            Enhavo\Bundle\ArticleBundle\Entity\Article: EnhavoAppBundle:App:show
+            Enhavo\Bundle\PageBundle\Entity\Page: EnhavoAppBundle:App:show
+
+enhavo_app:
+    permission_check: false
+    stylesheets:
+      - '@EnhavoDownloadBundle/Resources/public/css/style.css'
+    javascripts:
+
+    viewer:
+#        layout: 'EnhavoAppBundle::base.html.twig'
+        app: Enhavo\Bundle\AppBundle\Viewer\AppViewer
+    menu:
+        dashboard:
+            label: label.dashboard
+            route: enhavo_app_dashboard
+            role: ROLE_ESPERANTO_USER_USER_INDEX
+        user:
+            label: label.user
+            route: enhavo_user_user_index
+            role: ROLE_ESPERANTO_USER_USER_INDEX
+        group:
+            label: label.group
+            route: enhavo_user_group_index
+            role: ROLE_ESPERANTO_USER_GROUP_INDEX
+        article:
+            label: label.article
+            route: enhavo_article_article_index
+            role: ROLE_ESPERANTO_NEWS_NEWS_INDEX
+        page:
+            label: label.page
+            route: enhavo_page_page_index
+            role: ROLE_ESPERANTO_PAGE_PAGE_INDEX
+        download:
+            label: label.download
+            route: enhavo_download_download_index
+            role: ROLE_ESPERANTO_DOWNLOAD_DOWNLOAD_INDEX
+        slider:
+            label: label.slider
+            route: enhavo_slider_slide_index
+            role: ROLE_ESPERANTO_SLIDER_SLIDER_INDEX
+        newsletter:
+            label: label.newsletter
+            route: enhavo_newsletter_newsletter_index
+            role: ROLE_ESPERANTO_NEWSLETTER_NEWSLETTER_INDEX
+
+enhavo_content_grid:
+    render:
+        sets:
+            default:
+#                picture: enhavoProjectBundle:ItemType:picture.html.twig
+
+    items:
+        picture:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\Picture
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\PictureType
+            repository: EnhavoContentGridBundle:Picture
+            template: EnhavoContentGridBundle:Item:picture.html
+            label: Bild
+        picture_picture:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\PicturePicture
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\PicturePictureType
+            repository: EnhavoContentGridBundle:PicturePicture
+            template: EnhavoContentGridBundle:Item:picture_picture.html
+            label: Bild | Bild
+        gallery:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\Gallery
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\GalleryType
+            repository: EnhavoContentGridBundle:Gallery
+            template: EnhavoContentGridBundle:Item:gallery.html
+            label: Galerie
+        text:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\Text
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\TextType
+            repository: EnhavoContentGridBundle:Text
+            template: EnhavoContentGridBundle:Item:text.html
+            label: Text
+        text_picture:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\TextPicture
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\TextPictureType
+            repository: EnhavoContentGridBundle:TextPicture
+            template: EnhavoContentGridBundle:Item:text_picture.html
+            label: Text | Bild
+        text_text:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\TextText
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\TextTextType
+            repository: EnhavoContentGridBundle:TextText
+            template: EnhavoContentGridBundle:Item:text_text.html
+            label: Text | Text
+        cite_text:
+            model: Enhavo\Bundle\ContentGridBundle\Entity\CiteText
+            form: Enhavo\Bundle\ContentGridBundle\Form\Type\CiteTextType
+            repository: EnhavoContentGridBundle:CiteText
+            template: EnhavoContentGridBundle:Item:cite_text.html
+            label: Zitat
+        download:
+            model: Enhavo\Bundle\DownloadBundle\Entity\DownloadItem
+            form: Enhavo\Bundle\DownloadBundle\Form\Type\DownloadItemType
+            repository: EnhavoDownloadBundle:DownloadItem
+            template: EnhavoDownloadBundle:Item:download.html.twig
+            label: Download
+
+enhavo_page:
+    classes:
+        page:
+            model: Enhavo\Bundle\PageBundle\Entity\Page
+            form: Enhavo\Bundle\PageBundle\Form\Type\PageType
+
+enhavo_article:
+    classes:
+         article:
+            model: Enhavo\Bundle\ArticleBundle\Entity\Article
+            form: Enhavo\Bundle\ArticleBundle\Form\Type\ArticleType
+            repository: Enhavo\Bundle\ArticleBundle\Repository\ArticleRepository
