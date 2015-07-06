@@ -38,7 +38,7 @@ class AppKernel extends Kernel
             new Enhavo\Bundle\PageBundle\EnhavoPageBundle(),
             new Enhavo\Bundle\CategoryBundle\EnhavoCategoryBundle(),
             new Enhavo\Bundle\AssetsBundle\EnhavoAssetsBundle(),
-            new Enhavo\Bundle\ContentGridBundle\EnhavoContentGridBundle(),
+            new Enhavo\Bundle\GridBundle\EnhavoGridBundle(),
             new Enhavo\Bundle\SliderBundle\EnhavoSliderBundle(),
             new Enhavo\Bundle\SettingBundle\EnhavoSettingBundle(),
             new Enhavo\Bundle\SearchBundle\EnhavoSearchBundle(),
@@ -46,6 +46,8 @@ class AppKernel extends Kernel
             new Enhavo\Bundle\NewsletterBundle\EnhavoNewsletterBundle(),
             new Enhavo\Bundle\CalendarBundle\EnhavoCalendarBundle(),
             new Enhavo\Bundle\ShopBundle\EnhavoShopBundle(),
+            new Enhavo\Bundle\ContentBundle\EnhavoContentBundle(),
+            new Enhavo\Bundle\DashboardBundle\EnhavoDashboardBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

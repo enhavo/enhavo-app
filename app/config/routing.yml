@@ -11,6 +11,10 @@ enhavo_admin:
     resource: "@EnhavoAppBundle/Resources/config/routing/admin.yml"
     prefix: /admin
 
+enhavo_dashboard:
+    resource: "@EnhavoDashboardBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
 enhavo_article:
     resource: "@EnhavoArticleBundle/Resources/config/routing/article.yml"
     prefix: /admin
@@ -35,8 +39,8 @@ enhavo_group:
     resource: "@EnhavoUserBundle/Resources/config/routing/group.yml"
     prefix: /admin
 
-enhavo_content_grid:
-    resource: "@EnhavoContentGridBundle/Resources/config/routing/routing.yml"
+enhavo_grid:
+    resource: "@EnhavoGridBundle/Resources/config/routing/routing.yml"
     prefix: /admin
 
 enhavo_newsletter_newsletter:
