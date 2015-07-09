@@ -54,7 +54,8 @@
     "enhavo/newsletter-bundle": "dev-master",
     "enhavo/download-bundle": "dev-master",
     "enhavo/dashboard-bundle": "dev-master",
-    "enhavo/content-bundle": "dev-master"
+    "enhavo/content-bundle": "dev-master",
+    "enhavo/class-analyzer": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
