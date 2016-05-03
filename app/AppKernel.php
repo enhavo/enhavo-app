@@ -49,6 +49,8 @@ class AppKernel extends Kernel
             new Enhavo\Bundle\ContentBundle\EnhavoContentBundle(),
             new Enhavo\Bundle\DashboardBundle\EnhavoDashboardBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Enhavo\Bundle\ContactBundle\EnhavoContactBundle(),
+            new Enhavo\Bundle\MigrationBundle\EnhavoMigrationBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
