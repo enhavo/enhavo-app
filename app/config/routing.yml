@@ -13,12 +13,16 @@ enhavo_theme_article:
     resource: "@EnhavoThemeBundle/Resources/config/routing/article.yml"
     prefix:   /
 
+enhavo_theme_shop:
+    resource: "@EnhavoThemeBundle/Resources/config/routing/shop.yml"
+    prefix:   /
+
 #
 # enhavo
 #
 enhavo_shop:
     resource: "@EnhavoShopBundle/Resources/config/routing/shop.yml"
-    prefix:   /
+    prefix:   /shop
 
 enhavo_contact:
     resource: "@EnhavoContactBundle/Resources/config/routing.yml"
@@ -36,8 +40,8 @@ enhavo_sitemap:
     resource: "@EnhavoContentBundle/Resources/config/routing/sitemap.yml"
     prefix:   /
 
-enhavo_newsletter_subscriber:
-    resource: "@EnhavoNewsletterBundle/Resources/config/routing/subscriber.yml"
+enhavo_newsletter_subscribe:
+    resource: "@EnhavoNewsletterBundle/Resources/config/routing/subscribe.yml"
     prefix: /
 
 enhavo_user_security:
@@ -81,7 +85,11 @@ enhavo_grid:
     prefix: /admin
 
 enhavo_newsletter_newsletter:
-    resource: "@EnhavoNewsletterBundle/Resources/config/routing/newsletter.yml"
+    resource: "@EnhavoNewsletterBundle/Resources/config/routing/admin/newsletter.yml"
+    prefix: /admin
+
+enhavo_newsletter_subscriber:
+    resource: "@EnhavoNewsletterBundle/Resources/config/routing/admin/subscriber.yml"
     prefix: /admin
 
 enhavo_category_category:
@@ -104,6 +112,14 @@ enhavo_setting:
     resource: "@EnhavoSettingBundle/Resources/config/routing/setting.yml"
     prefix: /admin
 
+enhavo_shop_admin:
+    resource: "@EnhavoShopBundle/Resources/config/routing/admin.yml"
+    prefix:   /admin
+
+
+#
+# 3rd Party
+#
 _bazinga_jstranslation:
     resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
 
