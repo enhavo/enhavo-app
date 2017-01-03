@@ -24,14 +24,14 @@ enhavo_app:
             type: calendar
         workflow:
             type: workflow
-        product_option:
-            type: shop_product_option
         product:
             type: shop_product
         order:
             type: shop_order
         setting:
             type: setting
+        translation-strings:
+            type: translation
 
 enhavo_grid:
     items:

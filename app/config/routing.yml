@@ -105,6 +105,9 @@ enhavo_comment:
     resource: "@EnhavoCommentBundle/Resources/config/routing.yml"
     prefix:   /
 
+enhavo_translation:
+    resource: "@EnhavoTranslationBundle/Resources/config/routing/translation_string.yml"
+    prefix: /admin
 #
 # 3rd Party
 #
@@ -116,6 +119,15 @@ fos_js_routing:
 
 _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+payum_capture:
+    resource: "@PayumBundle/Resources/config/routing/capture.xml"
+
+payum_authorize:
+    resource: "@PayumBundle/Resources/config/routing/authorize.xml"
+
+payum_notify:
+    resource: "@PayumBundle/Resources/config/routing/notify.xml"
 
 #
 # project
