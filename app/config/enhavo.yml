@@ -53,7 +53,3 @@ enhavo_grid:
             type: download
         video:
             type: video
-
-services:
-    mail:
-        alias: mailer
