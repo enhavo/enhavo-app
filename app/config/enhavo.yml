@@ -1,6 +1,9 @@
 parameters:
   locale: en
 
+enhavo_translation:
+    default_locale: '%locale%'
+
 enhavo_app:
     menu:
         dashboard:
