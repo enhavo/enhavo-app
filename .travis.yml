@@ -11,7 +11,7 @@ before_install:
     
 install:
     - sudo apt-get install -y --force-yes php5-mysql
-    - mysql -e 'create database enhavo_test'
+    - mysql -e 'create database enhavo'
     - composer install --no-interaction
 
 before_script:
