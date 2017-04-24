@@ -1,9 +1,6 @@
 parameters:
   locale: en
 
-enhavo_translation:
-    default_locale: '%locale%'
-
 enhavo_app:
     menu:
         dashboard:
@@ -12,54 +9,3 @@ enhavo_app:
             type: user_user
         group:
             type: user_group
-        article:
-            type: article
-        page:
-            type: page
-        category:
-            type: category
-        download:
-            type: download
-        slider:
-            type: slider
-        newsletter:
-            type: newsletter_newsletter
-        subscriber:
-            type: newsletter_subscriber
-        calendar:
-            type: calendar
-        product:
-            type: shop_product
-        order:
-            type: shop_order
-        setting:
-            type: setting
-        translation-strings:
-            type: translation
-        magazine:
-            type: base
-            route: enhavo_project_magazine_index
-
-
-enhavo_grid:
-    items:
-        picture:
-            type: picture
-        picture_picture:
-            type: picture_picture
-        three_picture:
-            type: three_picture
-        gallery:
-            type: gallery
-        text:
-            type: text
-        text_picture:
-            type: text_picture
-        text_text:
-            type: text_text
-        cite_text:
-            type: cite_text
-        download:
-            type: download
-        video:
-            type: video

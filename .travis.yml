@@ -25,3 +25,4 @@ before_script:
 
 script:
   - composer validate
+  - app/console enhavo:install --user=admin --password=admin --email=admin@enhavo.com --no-bundle --no-interaction
