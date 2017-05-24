@@ -8,6 +8,7 @@ imports:
     - { resource: '@EnhavoSearchBundle/Resources/config/app/config.yml' }
     - { resource: '@EnhavoSerializerBundle/Resources/config/app/config.yml' }
     - { resource: '@EnhavoUserBundle/Resources/config/app/config.yml' }
+    - { resource: '@EnhavoMediaBundle/Resources/config/app/config.yml' }
     - { resource: security.yml }
     - { resource: enhavo.yml }
     - { resource: "@ProjectBundle/Resources/config/services.yml" }

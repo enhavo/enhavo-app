@@ -1236,12 +1236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/enhavo/enhavo.git",
-                "reference": "2c39f96e53b7d3206f320934298d64502594056f"
+                "reference": "8a925f5fb1b6b0d43397ddc80d0928b3d9a1cb0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/enhavo/enhavo/zipball/2c39f96e53b7d3206f320934298d64502594056f",
-                "reference": "2c39f96e53b7d3206f320934298d64502594056f",
+                "url": "https://api.github.com/repos/enhavo/enhavo/zipball/8a925f5fb1b6b0d43397ddc80d0928b3d9a1cb0d",
+                "reference": "8a925f5fb1b6b0d43397ddc80d0928b3d9a1cb0d",
                 "shasum": ""
             },
             "require": {
@@ -1338,19 +1338,14 @@
             "autoload": {
                 "psr-4": {
                     "": "src/"
-                },
-                "classmap": [
-                    "app/AppKernel.php",
-                    "app/AppCache.php",
-                    "app/Environment.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "enhavo",
-            "time": "2017-04-23 22:32:54"
+            "time": "2017-05-24 15:43:24"
         },
         {
             "name": "facebook/graph-sdk",
