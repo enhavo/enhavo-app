@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "enhavo/enhavo": "dev-master"
+    "enhavo/enhavo": "0.5.x-dev"
   },
   "scripts": {
     "post-install-cmd": [

@@ -1292,7 +1292,7 @@
         },
         {
             "name": "enhavo/enhavo",
-            "version": "dev-master",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/enhavo/enhavo.git",
