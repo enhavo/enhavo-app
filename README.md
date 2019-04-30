@@ -11,7 +11,12 @@ Installation
 ```bash
 $ composer create-project enhavo/enhavo-app enhavo
 $ cd enhavo
-$ app/console enhavo:install
+$ composer install
+$ yarn install
+$ yarn routes:dump
+$ yarn encore dev
+$ bin/console fos:user:create admin@enhavo.com admin@enhavo.com password
+$ bin/console fos:user:promote admin@enhavo.com ROLE_SUPER_ADMIN
 ```
 
 Documentation

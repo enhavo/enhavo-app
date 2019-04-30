@@ -1,5 +1,5 @@
 const Encore = require('@symfony/webpack-encore');
-const EnhavoEncore = require('./assets/node_modules/@enhavo/core/EnhavoEncore');
+const EnhavoEncore = require('@enhavo/core/EnhavoEncore');
 
 Encore
   .setOutputPath('public/build/')

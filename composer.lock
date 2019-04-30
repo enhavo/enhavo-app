@@ -1518,16 +1518,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v6.5.0",
+            "version": "v6.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "3ff319bc725d6e53e90a3e3a8aa4d5538b9a3866"
+                "reference": "8bde3f3b821361ec75e08a3746231d87230a2d3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/3ff319bc725d6e53e90a3e3a8aa4d5538b9a3866",
-                "reference": "3ff319bc725d6e53e90a3e3a8aa4d5538b9a3866",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/8bde3f3b821361ec75e08a3746231d87230a2d3a",
+                "reference": "8bde3f3b821361ec75e08a3746231d87230a2d3a",
                 "shasum": ""
             },
             "require": {
@@ -1537,7 +1537,7 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "cpliakas/git-wrapper": "~1.0",
+                "cpliakas/git-wrapper": "^1.7 || ^2.1",
                 "doctrine/inflector": "^1.1",
                 "mockery/mockery": "^1.2",
                 "phpstan/phpstan-shim": "^0.9 || ^0.11",
@@ -1574,7 +1574,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2019-04-24T08:57:42+00:00"
+            "time": "2019-04-29T15:14:22+00:00"
         },
         {
             "name": "enhavo/enhavo",
@@ -1582,12 +1582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/enhavo/enhavo.git",
-                "reference": "ecd99608adf30638fb5d69dd96afc3f17d2359f0"
+                "reference": "8163a5d137982a0cf9761bfbf76f0f3a35953909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/enhavo/enhavo/zipball/ecd99608adf30638fb5d69dd96afc3f17d2359f0",
-                "reference": "ecd99608adf30638fb5d69dd96afc3f17d2359f0",
+                "url": "https://api.github.com/repos/enhavo/enhavo/zipball/8163a5d137982a0cf9761bfbf76f0f3a35953909",
+                "reference": "8163a5d137982a0cf9761bfbf76f0f3a35953909",
                 "shasum": ""
             },
             "require": {
@@ -1707,7 +1707,7 @@
                 "MIT"
             ],
             "description": "enhavo",
-            "time": "2019-04-29T12:26:45+00:00"
+            "time": "2019-04-29T13:09:38+00:00"
         },
         {
             "name": "evenement/evenement",
