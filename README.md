@@ -1,3 +1,7 @@
+![alt text](assets/images/enhavo.svg "enhavo")
+<br/>
+<br/>
+
 Enhavo app edition
 -------------------
 

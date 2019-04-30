@@ -25,6 +25,13 @@ Encore
   .addEntry('enhavo/delete', './assets/enhavo/delete')
   .addEntry('enhavo/list', './assets/enhavo/list')
   .addEntry('enhavo/login', './assets/enhavo/login')
+
+  .addEntry('base', './assets/base')
+
+  .copyFiles({
+    from: './assets/images',
+    to: 'images/[path][name].[ext]'
+  })
 ;
 
 config = EnhavoEncore.getWebpackConfig(Encore.getWebpackConfig());

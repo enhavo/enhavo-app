@@ -5,12 +5,12 @@
   "description": "enhavo",
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "App\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "": "tests/"
+      "App\\": "tests/"
     }
   },
   "require": {
