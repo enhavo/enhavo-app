@@ -5,13 +5,13 @@ Encore
   .setOutputPath('public/build/')
   .setPublicPath('/build')
   .enableSingleRuntimeChunk()
-  .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
   .splitEntryChunks()
   .autoProvidejQuery()
   .enableVueLoader()
   .enableSassLoader()
   .enableTypeScriptLoader()
+  .enableVersioning(Encore.isProduction())
 
   .addEntry('enhavo/main', './assets/enhavo/main')
   .addEntry('enhavo/index', './assets/enhavo/index')
@@ -25,6 +25,24 @@ Encore
   .addEntry('enhavo/delete', './assets/enhavo/delete')
   .addEntry('enhavo/list', './assets/enhavo/list')
   .addEntry('enhavo/login', './assets/enhavo/login')
+;
+
+enhavoConfig = EnhavoEncore.getWebpackConfig(Encore.getWebpackConfig());
+enhavoConfig.name = 'enhavo';
+
+Encore.reset();
+
+Encore
+  .setOutputPath('public/build/')
+  .setPublicPath('/build')
+  .enableSingleRuntimeChunk()
+  .enableSourceMaps(!Encore.isProduction())
+  .splitEntryChunks()
+  .autoProvidejQuery()
+  .enableVueLoader()
+  .enableSassLoader()
+  .enableTypeScriptLoader()
+  .enableVersioning(Encore.isProduction())
 
   .addEntry('base', './assets/base')
 
@@ -34,6 +52,7 @@ Encore
   })
 ;
 
-config = EnhavoEncore.getWebpackConfig(Encore.getWebpackConfig());
+themeConfig = Encore.getWebpackConfig();
+themeConfig.name = 'theme';
 
-module.exports = config;
+module.exports = [themeConfig, enhavoConfig];

@@ -625,18 +625,19 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@enhavo/app@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/app/-/app-0.1.6.tgz#907d42565858f24a34ee7b6a8e52a42db49c56ae"
-  integrity sha512-enMBgEL3FwOQ10uwOW5gG/yX5Y6s4opn3HjjCUeMf9A/n2eFgW32KWlZSMS4xiWFB3mkvuTABetaQQ+uONwM1g==
+"@enhavo/app@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/app/-/app-0.1.13.tgz#611f2b6f8e96cdd1927b3a77f967102a2f42d538"
+  integrity sha512-dSa09/25RlhhraFPb7D97RMpPJfkVTDWXNmJW26GYoTCPvXYjn/VtA7lzy/IO7jjw3ZNsROxnOzX6BoGLMzk9w==
   dependencies:
-    "@enhavo/core" "^0.1.6"
-    "@enhavo/font" "^0.1.6"
+    "@enhavo/core" "^0.1.13"
+    "@enhavo/font" "^0.1.13"
     "@ibm/plex" "^1.2.3"
     async "^2.6.2"
     axios "^0.18.0"
     compass-mixins "^0.12.10"
-    jquery "~3.1.0"
+    jexl "^2.1.1"
+    jquery "~3.4.1"
     lodash "^4.17.11"
     pako "^1.0.10"
     urijs "^1.19.1"
@@ -646,62 +647,58 @@
     vue-select "^3.0.0"
     vuedraggable "^2.20.0"
 
-"@enhavo/core@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/core/-/core-0.1.6.tgz#da68de0ddce4376fef3768e5725535df5919e7b2"
-  integrity sha512-KBvttRWu33iEtzN4Ej2Zqi/i34JAAECwSz4Bs+p+len5eTGodWmO9aHicew2878iHhF2ZzScM/6xGdFtx8Y03w==
+"@enhavo/core@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/core/-/core-0.1.13.tgz#5b3b84a2346b9fb8362079de0d9de3005dff2b48"
+  integrity sha512-s0OdMRgj01DJmSXwWUrlcxDbzXTqq9iHWzXuY35x9ui5EBOm2OyiV3fiJojpXm5K38i9NH0Y1CxYzS3TeUhmgw==
 
-"@enhavo/dashboard@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/dashboard/-/dashboard-0.1.6.tgz#a1891247a7cb81e078f693028838fc70c9ac2c31"
-  integrity sha512-nKTDANCOqPNvYxqSRKvXlaV63Gj+hn46m/ePmacZ2ENnvwNkdhiubeHpu4ftG3172IrmImXjTKL38hRb9A8f4Q==
+"@enhavo/dashboard@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/dashboard/-/dashboard-0.1.13.tgz#e635d89f8fee6ce8ae82422c8a5d98868ea42004"
+  integrity sha512-dz7edE7CkthDYgKozrUty1NKewwzemd5sSWDlMD7rvv3aoPmNPHzE+6FWtR5EYjm3Q+uNg7OnYJrau2IlCNMhg==
   dependencies:
-    "@enhavo/app" "^0.1.6"
+    "@enhavo/app" "^0.1.13"
     chart.js "^2.4.0"
-    jquery "~3.1.0"
+    jquery "~3.4.1"
     lodash "^4.17.11"
 
-"@enhavo/font@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/font/-/font-0.1.6.tgz#52ff8be9e98e5f700f273d449aebfe28f1092c89"
-  integrity sha512-iDht+k/MyyAsRRgh9UhEOewi3X11uHBbNp8oWpL3VVkL3dBoxtUfAlMEYPlVaNcURNfvEcCDN9Vv6wqCW/C+eQ==
+"@enhavo/font@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/font/-/font-0.1.13.tgz#66055ae831f560f75f8718777f63c2ab129de5f9"
+  integrity sha512-nTOQTz0+nEizJ4DtaHuU/mACpbmDqIlPfSsj36+3ZLtasm0HrVJZplr9u0Jadqrzrg3xeaJYju6Gblg2l88gRA==
 
-"@enhavo/form@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/form/-/form-0.1.6.tgz#89b83efaef75194cead343c7f4ea8b26ad034d42"
-  integrity sha512-ikkQqC1Uk3Ojbsla8gVGAuGM/c8rZkMzBPDzpEUU2+Rfyj1GNllJ+5JGb2K4luqzKQ73bC8fsYXk/CeDoEN3lg==
+"@enhavo/form@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/form/-/form-0.1.13.tgz#cfefe3328eaac39cd7b23df787f784e4187d57dd"
+  integrity sha512-gE8q6hQvCXgqtPNgAUDS7JukqZztj9U5TVQzwv0JqiQ4yiAjLI0CULaq+cFWMIDAC2+AC0eUEYcjQYfCU2uSgw==
   dependencies:
-    "@enhavo/app" "^0.1.6"
+    "@enhavo/app" "^0.1.13"
     copy-webpack-plugin "^4.5.2"
     icheck "~1.0.2"
-    jquery "~3.1.0"
+    jquery "~3.4.1"
     jquery-datetimepicker "^2.5.21"
     lodash "^4.17.11"
     moment "^2.18.1"
     select2 "~3.5.1"
     tinymce "~5.0.3"
 
-"@enhavo/media@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/media/-/media-0.1.6.tgz#8e6ef9d1b5d62b70bd6c6f28b6faace5356c6350"
-  integrity sha512-y3wSe42uU+jGjEBBDqk9VMk2DRjVRYVQU3RCOiIZvr3lv0IAyqhLrx4NcVCRaKu02yhH0OmQEAC9wNVisx05zg==
+"@enhavo/media@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/media/-/media-0.1.13.tgz#3f5e131a4218b1a99b202c8012b9f8efe341db65"
+  integrity sha512-lM/J2hG3PrQ5jAea6N2nIdksTNsKR/6cvHkthJlKcVJ+gcbqEjv52IVEFrt8lHFzyKUAWaWJRR66/EEmRT+4Vw==
   dependencies:
-    "@enhavo/app" "^0.1.6"
+    "@enhavo/app" "^0.1.13"
     blueimp-file-upload "^9.22.1"
     cropperjs "~1.2.2"
-    jquery "~3.1.0"
+    jquery "~3.4.1"
     lodash "^4.17.11"
 
-"@enhavo/user@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@enhavo/user/-/user-0.1.6.tgz#042dd1bb0cddc4b8c768a59790ff575a01e48dcc"
-  integrity sha512-EjBVFW6sFH/fk5QanyYhjaeReFp+HZU6u6tp4Hv8HrLi44pglf7g0jnV0yySuBuddgQokhwyn46JMEp82HjFBA==
+"@enhavo/user@^0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@enhavo/user/-/user-0.1.13.tgz#757c09116062770736aba72e83978c1edada86c7"
+  integrity sha512-fO12jHcpIQ6/Qim6vFUYrIw00iP94dyGpnfoFIw627n9GeCZ3N5/PsbOJl+mbYVCQM2vlpT5h9ceLfrojuv6hw==
   dependencies:
-    "@enhavo/app" "^0.1.6"
-    blueimp-file-upload "^9.22.1"
-    cropperjs "~1.2.2"
-    jquery "~3.1.0"
-    lodash "^4.17.11"
+    "@enhavo/app" "^0.1.13"
 
 "@ibm/plex@^1.2.3":
   version "1.4.1"
@@ -3899,6 +3896,11 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+jexl@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/jexl/-/jexl-2.1.1.tgz#d4f2cb9e488ff737f73acc08c5afed37e07f886b"
+  integrity sha512-a+dZiuYIKl0nPYdAe7sJ8D/bCAbemwLjLypcT2brXtft/Mi3titp1QRCpTkaHrp+qeno8DKFxVpVKYNvw1AV3A==
+
 jquery-datetimepicker@^2.5.21:
   version "2.5.21"
   resolved "https://registry.yarnpkg.com/jquery-datetimepicker/-/jquery-datetimepicker-2.5.21.tgz#00c388a78df2732fedfdb5c6529b6e84d53e0235"
@@ -3918,10 +3920,10 @@ jquery-datetimepicker@^2.5.21:
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
 
-jquery@~3.1.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
-  integrity sha1-NHwcIcfgBBFeCk2jLOzgQfrTyKM=
+jquery@~3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
 
 js-base64@^2.1.8:
   version "2.5.1"
