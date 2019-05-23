@@ -1,4 +1,4 @@
-![alt text](assets/images/enhavo.svg "enhavo")
+![alt text](assets/enhavo/images/enhavo.svg "enhavo")
 <br/>
 <br/>
 
@@ -19,8 +19,7 @@ $ composer install
 $ yarn install
 $ yarn routes:dump
 $ yarn encore dev
-$ bin/console fos:user:create admin@enhavo.com admin@enhavo.com password
-$ bin/console fos:user:promote admin@enhavo.com ROLE_SUPER_ADMIN
+$ bin/console fos:user:create admin@enhavo.com admin@enhavo.com password --super-admin
 ```
 
 Documentation
