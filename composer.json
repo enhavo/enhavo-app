@@ -14,7 +14,7 @@
     }
   },
   "require": {
-    "enhavo/enhavo": "dev-master"
+    "enhavo/enhavo": "0.7.x-dev"
   },
   "require-dev": {
     "symfony/debug-pack": "^1.0",
