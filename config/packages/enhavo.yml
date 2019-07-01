@@ -2,6 +2,8 @@ parameters:
     locale: en
 
 enhavo_app:
+    template:
+        base: 'base.html.twig'
     menu:
         dashboard:
             type: dashboard

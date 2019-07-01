@@ -31,5 +31,4 @@ return [
     Enhavo\Bundle\MediaBundle\EnhavoMediaBundle::class => ['all' => true],
     Enhavo\Bundle\FormBundle\EnhavoFormBundle::class => ['all' => true],
     Enhavo\Bundle\DashboardBundle\EnhavoDashboardBundle::class => ['all' => true],
-
 ];

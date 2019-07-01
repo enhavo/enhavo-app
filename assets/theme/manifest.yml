@@ -1,0 +1,15 @@
+key: theme
+meta:
+    name: 'Theme'
+    image: ~
+    description: ''
+webpack:
+    options:
+        color1:
+    entries:
+        base: './base.ts'
+template:
+    mapping: []
+block:
+    column_styles: []
+    templates: []
