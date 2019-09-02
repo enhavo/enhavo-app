@@ -14,7 +14,15 @@
     }
   },
   "require": {
-    "enhavo/enhavo": "dev-master"
+    "php": ">=7.2",
+    "enhavo/app-bundle": "dev-master",
+    "enhavo/form-bundle": "dev-master",
+    "enhavo/media-bundle": "dev-master",
+    "enhavo/user-bundle": "dev-master",
+    "enhavo/dashboard-bundle": "dev-master",
+    "symfony/flex": "^1.1",
+    "sensio/framework-extra-bundle": "^5.1",
+    "symfony/dotenv": "^4.2"
   },
   "require-dev": {
     "symfony/debug-pack": "^1.0",

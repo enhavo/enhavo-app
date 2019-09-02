@@ -1,0 +1,17 @@
+{
+    "enhavo/app-bundle": {
+        "version": "dev-master"
+    },
+    "enhavo/dashboard-bundle": {
+        "version": "dev-master"
+    },
+    "enhavo/form-bundle": {
+        "version": "dev-master"
+    },
+    "enhavo/media-bundle": {
+        "version": "dev-master"
+    },
+    "enhavo/user-bundle": {
+        "version": "dev-master"
+    }
+}
