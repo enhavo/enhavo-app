@@ -25,4 +25,4 @@ $ bin/console fos:user:create admin@enhavo.com admin@enhavo.com password --super
 Documentation
 -------------
 
-For further information read the [docs](http://docs.enhavo.org)
+For further information read the [docs](http://docs.enhavo.com)
