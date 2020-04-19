@@ -81,18 +81,6 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
-    "easycorp/easy-log-handler": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "70062abc2cd58794d2a90274502f81b55cd9951b"
-        },
-        "files": [
-            "config/packages/dev/easy_log_handler.yaml"
-        ]
-    },
     "egulias/email-validator": {
         "version": "2.1.11"
     },
@@ -111,8 +99,8 @@
     "enhavo/user-bundle": {
         "version": "dev-master"
     },
-    "fig/link-util": {
-        "version": "1.0.0"
+    "ezyang/htmlpurifier": {
+        "version": "v4.12.0"
     },
     "friendsofsymfony/jsrouting-bundle": {
         "version": "2.3",
@@ -217,6 +205,9 @@
     },
     "paragonie/random_compat": {
         "version": "v2.0.18"
+    },
+    "php": {
+        "version": "7.2"
     },
     "phpcollection/phpcollection": {
         "version": "0.5.0"
@@ -351,6 +342,9 @@
     "symfony/dotenv": {
         "version": "v4.2.11"
     },
+    "symfony/error-handler": {
+        "version": "v4.4.7"
+    },
     "symfony/event-dispatcher": {
         "version": "v4.2.11"
     },
@@ -418,6 +412,9 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/mime": {
+        "version": "v5.0.7"
+    },
     "symfony/monolog-bridge": {
         "version": "v4.2.11"
     },
@@ -474,6 +471,9 @@
     },
     "symfony/polyfill-php72": {
         "version": "v1.12.0"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.15.0"
     },
     "symfony/process": {
         "version": "v4.2.11"
