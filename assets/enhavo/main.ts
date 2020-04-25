@@ -5,5 +5,5 @@ import WidgetRegistryPackage from "./registry/widget";
 
 Application.getViewRegistry().registerPackage(new ViewRegistryPackage(Application));
 Application.getMenuRegistry().registerPackage(new MenuRegistryPackage(Application));
-Application.getVueLoader().load(() => import("@enhavo/app/Main/Components/MainComponent.vue"));
 Application.getWidgetRegistry().registerPackage(new WidgetRegistryPackage(Application));
+Application.getVueLoader().load(() => import("@enhavo/app/Main/Components/MainComponent.vue"));
