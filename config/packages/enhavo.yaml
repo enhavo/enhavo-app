@@ -1,0 +1,8 @@
+enhavo_app:
+    menu:
+        dashboard:
+            type: dashboard
+        user:
+            type: user
+        media_library:
+            type: media_library
