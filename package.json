@@ -1,0 +1,10 @@
+{
+  "name": "enhavo",
+  "license": "MIT",
+  "scripts": {
+    "routes:dump": "bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json"
+  },
+  "dependencies": {
+    "@enhavo/app": "^0.8"
+  }
+}

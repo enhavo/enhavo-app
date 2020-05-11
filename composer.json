@@ -2,7 +2,7 @@
   "name": "enhavo/enhavo-app",
   "license": "MIT",
   "type": "project",
-  "description": "enhavo",
+  "description": "enhavo app edition",
   "autoload": {
     "psr-4": {
       "App\\": "src/"
