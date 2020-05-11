@@ -1,3 +1,0 @@
-app_admin:
-    resource:   "routes/admin/*"
-    prefix:     /admin
