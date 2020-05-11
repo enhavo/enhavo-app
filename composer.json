@@ -15,11 +15,11 @@
   },
   "require": {
     "php": ">=7.2",
-    "enhavo/app-bundle": "dev-master",
-    "enhavo/form-bundle": "dev-master",
-    "enhavo/media-bundle": "dev-master",
-    "enhavo/user-bundle": "dev-master",
-    "enhavo/dashboard-bundle": "dev-master",
+    "enhavo/app-bundle": "^0.8",
+    "enhavo/form-bundle": "^0.8",
+    "enhavo/media-bundle": "^0.8",
+    "enhavo/user-bundle": "^0.8",
+    "enhavo/dashboard-bundle": "^0.8",
     "symfony/flex": "^1.1",
     "sensio/framework-extra-bundle": "^5.1",
     "symfony/dotenv": "^4.2"
