@@ -1,58 +1,28 @@
-const Encore = require('@symfony/webpack-encore');
 const EnhavoEncore = require('@enhavo/core/EnhavoEncore');
+const AppPackage = require('@enhavo/app/Encore/EncoreRegistryPackage');
+const FormPackage = require('@enhavo/form/Encore/EncoreRegistryPackage');
+const MediaPackage = require('@enhavo/media/Encore/EncoreRegistryPackage');
+const DashboardPackage = require('@enhavo/dashboard/Encore/EncoreRegistryPackage');
+const UserPackage = require('@enhavo/user/Encore/EncoreRegistryPackage');
 
-Encore
-  .setOutputPath('public/build/enhavo/')
-  .setPublicPath('/build/enhavo')
-  .enableSingleRuntimeChunk()
-  .enableSourceMaps(!Encore.isProduction())
-  .splitEntryChunks()
-  .autoProvidejQuery()
-  .enableVueLoader()
-  .enableSassLoader()
-  .enableTypeScriptLoader()
-  .enableVersioning(Encore.isProduction())
-
-  .addEntry('enhavo/main', './assets/enhavo/main')
-  .addEntry('enhavo/index', './assets/enhavo/index')
-  .addEntry('enhavo/view', './assets/enhavo/view')
-  .addEntry('enhavo/form', './assets/enhavo/form')
-  .addEntry('enhavo/editor', './assets/enhavo/editor')
-  .addEntry('enhavo/image-cropper', './assets/enhavo/image-cropper')
-  .addEntry('enhavo/media-library', './assets/enhavo/media-library')
-  .addEntry('enhavo/dashboard', './assets/enhavo/dashboard')
-  .addEntry('enhavo/preview', './assets/enhavo/preview')
-  .addEntry('enhavo/delete', './assets/enhavo/delete')
-  .addEntry('enhavo/list', './assets/enhavo/list')
-  .addEntry('enhavo/login', './assets/enhavo/login')
+EnhavoEncore
+  // register packages
+  .register(new AppPackage())
+  .register(new FormPackage())
+  .register(new MediaPackage())
+  .register(new DashboardPackage())
+  .register(new UserPackage())
 ;
 
-enhavoConfig = EnhavoEncore.getWebpackConfig(Encore.getWebpackConfig());
-enhavoConfig.name = 'enhavo';
+EnhavoEncore.add('enhavo', (Encore) => {
+  // custom encore config
+  // Encore.enableBuildNotifications();
+});
 
-Encore.reset();
+EnhavoEncore.add('theme', (Encore) => {
+  Encore
+    // add theme entry and config
+    .addEntry('base', './assets/theme/base')
+});
 
-Encore
-  .setOutputPath('public/build/theme/')
-  .setPublicPath('/build/theme')
-  .enableSingleRuntimeChunk()
-  .enableSourceMaps(!Encore.isProduction())
-  .splitEntryChunks()
-  .autoProvidejQuery()
-  .enableVueLoader()
-  .enableSassLoader()
-  .enableTypeScriptLoader()
-  .enableVersioning(Encore.isProduction())
-
-  .addEntry('base', './assets/theme/base')
-
-  .copyFiles({
-    from: './assets/theme/images',
-    to: 'images/[path][name].[ext]'
-  })
-;
-
-themeConfig = EnhavoEncore.getWebpackConfig(Encore.getWebpackConfig());
-themeConfig.name = 'theme';
-
-module.exports = [enhavoConfig, themeConfig];
+module.export = EnhavoEncore.export();
