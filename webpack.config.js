@@ -25,4 +25,4 @@ EnhavoEncore.add('theme', (Encore) => {
     .addEntry('base', './assets/theme/base')
 });
 
-module.export = EnhavoEncore.export();
+module.exports = EnhavoEncore.export();
