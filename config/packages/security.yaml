@@ -2,8 +2,6 @@ security:
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
 
-    role_hierarchy:
-
     providers:
         fos_userbundle:
             id: fos_user.user_provider.username
