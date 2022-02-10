@@ -14,7 +14,7 @@
     "@enhavo/user": "https://github.com/enhavo/user-assets.git#master",
     "@symfony/webpack-encore": "0.22.4",
     "copy-webpack-plugin": "^4.5.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "ts-loader": "^5.3",
     "typescript": "^3.1.1",
